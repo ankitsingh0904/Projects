@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><h1>Logo</h1></div>
+        <ul class="sidebar">
+          <li class="close" onclick=hidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+       <div class="menu">
+         <ul class="bar">
+          <li class="hide"><a href="#">About</a></li>
+          <li class="hide"><a href="#">Contacts</a></li>
+          <li class="hide"><a href="#">Blogs</a></li>
+          <li class="hide"><a href="#">Service</a></li>
+          <li class="hide"><a href="#">More</a></li>
+          <li class="show" onclick=showbar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+       </div>
+      </div>
+    </header>
+    <script>
+      function showbar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display="flex"
+       
+      }
+      function hidebar(){
+         const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display="none"
+      }
+    </script>
+  </body>
+</html>
